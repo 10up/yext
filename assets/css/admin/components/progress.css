@@ -12,7 +12,7 @@
 		right: 0;
 	}
 
-	@nest .yext-wizard[data-is-loaded="1"]:not([data-step="0"]) & {
+	.yext-wizard[data-is-loaded="1"]:not([data-step="0"]) & {
 		display: flex !important;
 	}
 }
@@ -33,15 +33,15 @@
 	width: 1.25rem;
 	z-index: 1;
 
-	@nest .yext-wizard__timeline-step:first-child & {
+	.yext-wizard__timeline-step:first-child & {
 		margin-left: 0;
 	}
-	
-	@nest .yext-wizard__timeline-step:last-child & {
+
+	.yext-wizard__timeline-step:last-child & {
 		margin-right: 0;
 	}
 
-	@nest .yext-wizard__timeline-step--complete & {
+	.yext-wizard__timeline-step--complete & {
 		border-color: var(--yxt-color-brand-primary);
 
 		&::before {
@@ -59,7 +59,7 @@
 		}
 	}
 
-	@nest .yext-wizard__timeline-step--active & {
+	.yext-wizard__timeline-step--active & {
 
 		&::before {
 			background: var(--yxt-color-brand-primary);
@@ -78,7 +78,7 @@
 .yext-wizard__timeline-step-circle-wrapper {
 	position: relative;
 
-	@nest .yext-wizard__timeline-step--complete & {
+	.yext-wizard__timeline-step--complete & {
 
 		&::before {
 			border-bottom: 3px solid #000;
@@ -90,7 +90,7 @@
 		}
 	}
 
-	@nest .yext-wizard:not([data-progress-id="0"]) .yext-wizard__timeline-step--active & {
+	.yext-wizard:not([data-progress-id="0"]) .yext-wizard__timeline-step--active & {
 
 		&::before {
 			border-bottom: 3px solid #000;
@@ -106,15 +106,15 @@
 .yext-wizard__timeline-step-title {
 	margin-top: 0.75rem;
 
-	@nest .yext-wizard__timeline-step--active & {
+	.yext-wizard__timeline-step--active & {
 		font-weight: 600;
 	}
 
-	@nest .yext-wizard__timeline-step:first-child & {
+	.yext-wizard__timeline-step:first-child & {
 		text-align: left;
 	}
 
-	@nest .yext-wizard__timeline-step:last-child & {
+	.yext-wizard__timeline-step:last-child & {
 		text-align: right;
 	}
 }

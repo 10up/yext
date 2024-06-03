@@ -36,7 +36,7 @@ const initAnswers = () => {
 	/**
 	 * Yext plugin settings object.
 	 *
-	 * @typedef {Object} YextPluginSettings
+	 * @typedef {object} YextPluginSettings
 	 *
 	 * @property {import('./types').YextPluginConfig} config  Config.
 	 * @property {import('./types').YextComponents} components Components.
@@ -87,5 +87,4 @@ const init = () => {
 /**
  * Initialize Yext
  */
-/* eslint-disable-next-line @wordpress/no-global-event-listener */
 window.addEventListener('DOMContentLoaded', init);

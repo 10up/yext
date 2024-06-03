@@ -47,18 +47,18 @@ const buildPayload = (formData) => {
 									[next]: index + 1 === parts.length ? value.trim() : obj,
 								}),
 								{},
-						  )
+							)
 						: {};
 
 					return merge(payload, object);
 				}, {}),
-		  );
+			);
 };
 
 /**
  * Setup Wizard
  *
- * @return {void}
+ * @returns {void}
  */
 const initWizard = () => {
 	/** @typedef {import('../types').YextWizard} YextWizard */
@@ -166,7 +166,7 @@ const initWizard = () => {
 	 * Get plugin `live` state
 	 *
 	 * @param {HTMLElement} target HTML Element
-	 * @return {boolean} Returns true if `target` has `data-is-live` attribute.
+	 * @returns {boolean} Returns true if `target` has `data-is-live` attribute.
 	 * Fallback to current plugin settings.
 	 */
 	const isLive = (target) =>
@@ -175,7 +175,7 @@ const initWizard = () => {
 	/**
 	 * Get the current step index from URL or HTML
 	 *
-	 * @return {number} Current step index
+	 * @returns {number} Current step index
 	 */
 	function getCurrentStep() {
 		if (hasQueryArg(window.location.href, 'step')) {
@@ -310,7 +310,7 @@ const initWizard = () => {
 	 * Go to next step
 	 *
 	 * @param {Event} event Submit|Click Event
-	 * @return {void}
+	 * @returns {void}
 	 */
 	const maybeNext = (event) => {
 		event.preventDefault();
@@ -355,7 +355,7 @@ const initWizard = () => {
 	 *
 	 * @param {Event} event Click Event
 	 *
-	 * @return {void}
+	 * @returns {void}
 	 */
 	const back = (event) => {
 		event.preventDefault();

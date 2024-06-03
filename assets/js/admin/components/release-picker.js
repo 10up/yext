@@ -20,7 +20,7 @@ export const initReleasePicker = () => {
 	}
 
 	/**
-	 * @typedef {Object} SearchBarRelease - A release object from Github.
+	 * @typedef {object} SearchBarRelease - A release object from Github.
 	 * @property {string} name - The name of the release.
 	 * @property {string} version - The version of the release.
 	 * @property {boolean} isPublished - Whether the release is published.
@@ -31,7 +31,7 @@ export const initReleasePicker = () => {
 	 *
 	 * @param {{tag_name: string, draft: boolean, prerelease: boolean}} release - A release object from Github.
 	 *
-	 * @return {SearchBarRelease} - A formatted release object.
+	 * @returns {SearchBarRelease} - A formatted release object.
 	 */
 	const formatRelease = (release) => ({
 		name: release.tag_name,
@@ -44,7 +44,7 @@ export const initReleasePicker = () => {
 	 *
 	 * @param {SearchBarRelease} release - A formatted Github release.
 	 *
-	 * @return {boolean} - Whether the release is a search bar release.
+	 * @returns {boolean} - Whether the release is a search bar release.
 	 */
 	const isSearchBarMinorRelease = ({ name, isPublished }) =>
 		name.includes('search-bar-') && isPublished && name.split('.')?.[2] === '0';
@@ -53,10 +53,10 @@ export const initReleasePicker = () => {
 	 * Fetch releases from Github.
 	 *
 	 * @param {string} url - The endpoint to fetch from.
-	 * @param {Object} params - The query parameters to send with the request.
-	 * @param {Object} [options] - Options to pass to the fetch call.
+	 * @param {object} params - The query parameters to send with the request.
+	 * @param {object} [options] - Options to pass to the fetch call.
 	 *
-	 * @return {Promise<{data: SearchBarRelease[], headers?: Headers}>} A promise that resolves to an array of releases.
+	 * @returns {Promise<{data: SearchBarRelease[], headers?: Headers}>} A promise that resolves to an array of releases.
 	 */
 	const fetchReleases = async (
 		url = RELEASE_ENDPOINT,
@@ -96,7 +96,7 @@ export const initReleasePicker = () => {
 	 * @param {string} url - The endpoint to fetch from.
 	 * @param {SearchBarRelease[]} releases - The releases to add to the select.
 	 *
-	 * @return {Promise<SearchBarRelease[]>} A promise that resolves to an array of releases.
+	 * @returns {Promise<SearchBarRelease[]>} A promise that resolves to an array of releases.
 	 */
 	const fetchReleasesWithPagination = async (url = RELEASE_ENDPOINT, releases = []) => {
 		const nextReleases = await fetchReleases(url);
@@ -119,7 +119,7 @@ export const initReleasePicker = () => {
 	 *
 	 * @param {SearchBarRelease} release - The release to build an option for.
 	 *
-	 * @return {HTMLOptionElement} - The option element.
+	 * @returns {HTMLOptionElement} - The option element.
 	 */
 	const buildOption = ({ version }) => {
 		const option = document.createElement('option');

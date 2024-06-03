@@ -3,7 +3,7 @@
  *
  * @param {string} html HTML string.
  *
- * @return {{container: HTMLElement}} Object with `container` prop.
+ * @returns {{container: HTMLElement}} Object with `container` prop.
  */
 export function render(html) {
 	const container = document.createElement('div');

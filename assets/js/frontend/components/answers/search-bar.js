@@ -26,7 +26,7 @@ class SearchBar extends Component {
  *
  * @param {SearchBarOptions} props Default component props.
  *
- * @return {{register: () => void}} Object with `register` method.
+ * @returns {{register: () => void}} Object with `register` method.
  */
 const searchBar = (props = {}) => {
 	const {
@@ -48,7 +48,7 @@ const searchBar = (props = {}) => {
 	 *
 	 * @param {string[]} classnames List of classnames.
 	 *
-	 * @return {string[]} List of valid classnames.
+	 * @returns {string[]} List of valid classnames.
 	 */
 	const getValidClassnames = (classnames) => {
 		return (
@@ -70,7 +70,7 @@ const searchBar = (props = {}) => {
 	 * @param {string[]} classnames A list of classnames.
 	 * @param {SearchBarOptions} defaults Default Search Bar options.
 	 *
-	 * @return {SearchBar[]} A list of Search Bar components.
+	 * @returns {SearchBar[]} A list of Search Bar components.
 	 */
 	const getSearchBars = (classnames = [], defaults = {}) => {
 		/**

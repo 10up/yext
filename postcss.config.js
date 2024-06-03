@@ -5,7 +5,6 @@ module.exports = ({ file, env }) => {
 		plugins: {
 			'postcss-import': {},
 			'postcss-mixins': {},
-			'postcss-nested': {},
 			'postcss-preset-env': {
 				stage: 0,
 				autoprefixer: {
@@ -17,7 +16,7 @@ module.exports = ({ file, env }) => {
 
 	// Only load postcss-editor-styles plugin when we're processing the editor-style.css file.
 	if (path.basename(file) === 'admin-style.css') {
-		config.plugins['postcss-editor-styles'] = {
+		config.plugins['postcss-editor-styles-wrapper'] = {
 			scopeTo: 'body .yext-styles-wrapper',
 			remove: ['html', '.js'],
 			replace: ['body'],
@@ -51,7 +50,7 @@ module.exports = ({ file, env }) => {
 							zindex: false,
 						},
 					],
-			  }
+				}
 			: false;
 
 	return config;

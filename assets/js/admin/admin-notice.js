@@ -21,7 +21,6 @@ const hideActivationNotice = (event) => {
 	}
 };
 
-/* eslint-disable-next-line @wordpress/no-global-event-listener */
 window.addEventListener('DOMContentLoaded', () => {
 	const notice = document.querySelector('.yext-activated-notice');
 
