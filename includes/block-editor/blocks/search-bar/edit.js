@@ -40,8 +40,8 @@ const HIDDEN_COMPONENT_CLASSNAME = 'component--is-hidden';
 /**
  * Search bar component for block editor.
  *
- * @param {Object} props Component props.
- * @return {Object} Block component.
+ * @param {object} props Component props.
+ * @returns {object} Block component.
  */
 const Edit = (props) => {
 	const {

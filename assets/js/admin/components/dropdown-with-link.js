@@ -9,7 +9,7 @@ const { site_url } = window.YEXT;
  * WordPress will take care of loading and redirecting properly
  *
  * @param  {number} postId Post Id
- * @return {string} url    The url for a post
+ * @returns {string} url    The url for a post
  */
 const buildUrlfromPostId = (postId) => {
 	return addQueryArgs(site_url, { p: postId });
@@ -19,7 +19,7 @@ const buildUrlfromPostId = (postId) => {
  * Event handler for setting change
  *
  * @param  {Event} e JS Event
- * @return {void}
+ * @returns {void}
  */
 const onDropDownChange = (e) => {
 	const { target } = e;
@@ -39,7 +39,7 @@ const onDropDownChange = (e) => {
 /**
  * Init method for the dropdown having a link button
  *
- * @return {void}
+ * @returns {void}
  */
 const initDropdownWithLink = () => {
 	const dropDownWithLink = document.querySelector(

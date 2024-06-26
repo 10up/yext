@@ -12,7 +12,7 @@
 	& tr {
 		display: flex;
 		flex-direction: column;
-		
+
 		&:not(:last-child) {
 			padding-bottom: 1.5rem;
 		}
@@ -20,7 +20,7 @@
 		&.required {
 
 			& label {
-	
+
 				&::after {
 					color: var(--yxt-color-error);
 					content: "*";
@@ -36,7 +36,7 @@
 			}
 
 			& label {
-	
+
 				&::after {
 					content: "(OPTIONAL)";
 					font-size: 0.75rem;
@@ -47,7 +47,7 @@
 		}
 
 		&.search_results {
-			
+
 			& .preview-link {
 				display: table;
 			}
@@ -156,7 +156,7 @@
 		height: var(--h-input);
 		padding-right: 2.75rem;
 		width: 100%;
-	
+
 		&::-ms-expand {
 			display: none;
 		}
@@ -166,7 +166,7 @@
 		}
 	}
 
-	@nest .yext-child-settings-search_bar-props & {
+	.yext-child-settings-search_bar-props & {
 		width: 80%;
 	}
 
@@ -212,7 +212,7 @@
 		display: none;
 	}
 
-	@nest .accordion & {
+	.accordion & {
 		margin-top: 0;
 
 		& tbody {

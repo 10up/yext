@@ -1,2 +1,2 @@
-global.ANSWERS = require('../vendor/answers/v1/answers.min');
-global.TemplateBundle = require('../vendor/answers/v1/templates.min');
+window.ANSWERS = require('../vendor/answers/v1/answers.min');
+window.TemplateBundle = require('../vendor/answers/v1/templates.min');

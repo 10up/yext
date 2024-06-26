@@ -124,7 +124,7 @@ export default class SearchBarPreview {
 	/**
 	 * Form change handler.
 	 *
-	 * @return {void}
+	 * @returns {void}
 	 */
 	handleFormChange() {
 		const form = this.target.querySelector('form');
@@ -221,7 +221,7 @@ export default class SearchBarPreview {
 						container.querySelector('.yxt-SearchBar-buttonImage').innerHTML = value
 							? await import('dompurify').then(({ default: DOMPurify }) =>
 									DOMPurify.sanitize(this.renderCustomIcon(value)),
-							  )
+								)
 							: '';
 
 						container

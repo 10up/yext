@@ -15,8 +15,8 @@ const TAB_QUERY_VAR = 'tab-selected';
 /**
  * Return the index for a tab
  *
- * @param  {Object} node DOM node element
- * @return {number}      Index
+ * @param  {object} node DOM node element
+ * @returns {number}      Index
  */
 function getTabIndex(node) {
 	return [...node.parentElement.children].indexOf(node);

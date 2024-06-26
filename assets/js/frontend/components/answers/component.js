@@ -6,7 +6,7 @@ export default class Component {
 	 * Construct a component.
 	 *
 	 * @param {string} name Component name.
-	 * @param {Object} props Component props.
+	 * @param {object} props Component props.
 	 */
 	constructor(name = '', props = {}) {
 		this.name = name;

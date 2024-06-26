@@ -5,11 +5,11 @@ import searchBar from './search-bar';
  *
  * @see {@link https://hitchhikers.yext.com/docs/answers-sdk/core-concepts/initialization/?target=answers-initialization}
  *
- * @param {Object} props Props.
+ * @param {object} props Props.
  * @param {import('../../types').AnswersUIOptions} props.config Configuration options.
  * @param {import('../../types').YextComponents} props.components Answers UI SDK Components.
  *
- * @return {{init?: () => Promise<void>, error?: string}} Object with `init` method or `error` property.
+ * @returns {{init?: () => Promise<void>, error?: string}} Object with `init` method or `error` property.
  */
 const Answers = ({ config, components }) => {
 	/**
@@ -52,7 +52,7 @@ const Answers = ({ config, components }) => {
 	/**
 	 * Initialize the library.
 	 *
-	 * @return {Promise<void>}
+	 * @returns {Promise<void>}
 	 */
 	const init = () => {
 		return new Promise((resolve, reject) => {
