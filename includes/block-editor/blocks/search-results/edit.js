@@ -41,7 +41,6 @@ const Edit = (props) => {
 			<div {...blockProps}>
 				{!url && (
 					<Placeholder
-						icon="none"
 						label={__('Yext Search Results Block', 'yext')}
 						className="wp-block-embed"
 						instructions={__('Add search results url.', 'yext')}
