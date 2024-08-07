@@ -65,7 +65,7 @@ function blocks_editor_scripts() {
 
 	wp_enqueue_style(
 		'yext-editor-style',
-		YEXT_URL . '/dist/css/editor-style.css',
+		YEXT_URL . '/dist/blocks/editor-style.css',
 		[ 'yext-search-bar' ],
 		YEXT_VERSION
 	);
