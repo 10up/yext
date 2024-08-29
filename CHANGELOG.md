@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
+## [1.0.4] - 2024-08-29
+
+### Fixed
+- Heading alignment for search-results block. Props [@burhandodhy](https://github.com/burhandodhy) via [#166](https://github.com/YextSolutions/yext-ai-search-for-wordpress/pull/166).
+
+### Changed
+- Update Node dependencies. Props [@burhandodhy](https://github.com/burhandodhy) via [#163](https://github.com/YextSolutions/yext-ai-search-for-wordpress/pull/163).
+- Bump WordPress version "tested up to" 6.6. Props [@burhandodhy](https://github.com/burhandodhy) via [#168](https://github.com/YextSolutions/yext-ai-search-for-wordpress/pull/168).
+
 ## [1.0.3] - 2023-10-19
 
 ### Fixed
@@ -31,6 +40,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial closed release.
 
 [Unreleased]: https://github.com/YextSolutions/yext-ai-search-for-wordpress/compare/trunk...develop
+[1.0.4]: https://github.com/YextSolutions/yext-ai-search-for-wordpress/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/YextSolutions/yext-ai-search-for-wordpress/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/YextSolutions/yext-ai-search-for-wordpress/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/YextSolutions/yext-ai-search-for-wordpress/compare/1.0.0...1.0.1
