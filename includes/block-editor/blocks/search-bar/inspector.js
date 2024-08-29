@@ -122,8 +122,8 @@ const fontWeights = [
 /**
  * Search bar sidebar component.
  *
- * @param {Object} props Component props.
- * @return {Object} Sidebar component.
+ * @param {object} props Component props.
+ * @returns {object} Sidebar component.
  */
 const Inspector = (props) => {
 	const {
