@@ -10,10 +10,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@master
-    - name: install node v14
+    - name: install node v18
       uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 18
     - name: Build
       run: |
         composer install --no-dev
