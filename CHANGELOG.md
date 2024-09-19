@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
-## [1.0.4] - 2024-08-29
+## [1.0.4] - 2024-09-19
 
 ### Fixed
 - Heading alignment for search-results block. Props [@burhandodhy](https://github.com/burhandodhy) via [#166](https://github.com/YextSolutions/yext-ai-search-for-wordpress/pull/166).
